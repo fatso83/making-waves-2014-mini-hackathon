@@ -1,0 +1,43 @@
+<html>
+<head>
+    <title></title>
+    <style type="text/css">
+        body {
+            background-color: #f0f0f0;
+        }
+
+        #timeline {
+            width: 950px;
+            margin: 10px auto;
+            position: absolute;
+            left: 50%;
+            margin-left: -475px;
+
+        }
+
+        #timeline:before {
+            content: "";
+            display: block;
+            border: 3px solid #bebebe;
+            position: absolute;
+            height: 100%;
+            left: 50%;
+            margin-left: -3px;
+
+        }
+    </style>
+</head>
+<body>
+    <div id="timeline">
+    </div>
+</body>
+<script type="text/javascript" src="data.js"></script>
+<script>
+console.time('start')
+</script>
+<script type="text/javascript" src="main.js"></script>
+<!--<script type="text/javascript" src="originalMain.js"></script> -->
+<script>
+console.timeEnd('start')
+</script>
+</html>

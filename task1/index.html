@@ -1,0 +1,27 @@
+<html>
+<head>
+	<title></title>
+
+</head>
+<body>
+</body>
+<script type="text/javascript" src="main.js"></script>
+<script>
+(function() {
+	var startTime = new Date().getTime(),
+		p = new Primes(),
+		endTime,
+		deltaTime;
+
+	p.search(25000);
+
+	endTime = new Date().getTime();
+	deltaTime = endTime - startTime;
+
+	console.log(p.getPrimeCount() + ' prime number is: ' +
+            p.getPrime(p.getPrimeCount() - 1) + ' executed in '
+            + deltaTime + ' milliseconds');
+
+})();
+</script>
+</html>
